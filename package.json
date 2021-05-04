@@ -5,6 +5,7 @@
   "author": "Tim Stackhouse <tstackhouse@gmail.com>",
   "license": "GPL-3.0-or-later",
   "private": false,
+  "repository": "https://github.com/tstackhouse/ffxiv-quest-maker",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
