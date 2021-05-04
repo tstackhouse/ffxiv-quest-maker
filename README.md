@@ -1,5 +1,7 @@
 # FfxivQuestMaker
 
+Inspired by (and using some of the assets from) [this Reddit post](https://www.reddit.com/r/ffxiv/comments/n4mcd7/i_created_a_custom_quest_template_thought_you_all/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
 
 ## Development server
