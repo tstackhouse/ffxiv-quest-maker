@@ -1,4 +1,18 @@
-import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  Inject,
+  Input,
+  OnChanges,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
+import {
+  ResizeObserverService,
+  RESIZE_OPTION_BOX,
+} from '@ng-web-apis/resize-observer';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 export const DEFAULT_CONFIG: QuestConfig = {
   type: 'quest-start',
@@ -15,12 +29,34 @@ export interface QuestConfig {
   selector: 'app-quest',
   templateUrl: './quest.component.html',
   styleUrls: ['./quest.component.scss'],
+  providers: [
+    ResizeObserverService,
+    {
+      provide: RESIZE_OPTION_BOX,
+      useValue: 'border-box',
+    },
+  ],
 })
 export class QuestComponent implements OnInit, OnChanges {
   @Input() public config: Partial<QuestConfig>;
 
-  constructor() {
+  public scaleFactor$: Observable<number>;
+
+  @ViewChild('questWindow')
+  questWindow: ElementRef | undefined;
+
+  constructor(@Inject(ResizeObserverService) observer: ResizeObserverService) {
     this.config = DEFAULT_CONFIG;
+
+    this.scaleFactor$ = observer.pipe(
+      map((entries) => {
+        const viewport = entries[0].contentRect.width;
+        const width = this.questWindow?.nativeElement?.offsetWidth || viewport;
+        const scale = viewport < width ? viewport / width : 1;
+
+        return scale;
+      })
+    );
   }
 
   ngOnInit(): void {}

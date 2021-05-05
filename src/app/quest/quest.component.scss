@@ -34,13 +34,14 @@
 
 :host {
   display: block;
-  scale: 0.75;
-  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 6px;
 }
 
 main {
-  position: absolute;
-  width: 882px + 61px;
+  transform-origin: top left;
+  width: 909px;
   height: 885px;
   background: url("../../assets/images/Backdrop.png") 14px 109px no-repeat;
   padding-top: 78px;

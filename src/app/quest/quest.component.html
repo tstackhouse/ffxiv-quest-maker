@@ -1,4 +1,4 @@
-<main>
+<main #questWindow [style.scale]="scaleFactor$ | async">
   <header>
     <h1 [class]="config.type">{{ config.questTitle }}</h1>
   </header>
