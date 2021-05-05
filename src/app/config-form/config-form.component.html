@@ -1,1 +1,21 @@
-<p>config-form works!</p>
+<form [formGroup]="form" fxLayout="column">
+  <mat-form-field>
+    <mat-label>Quest Type</mat-label>
+    <mat-select formControlName="type">
+      <mat-option value="quest-start">Normal</mat-option>
+      <mat-option value="msq-start">MSQ</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Quest Title</mat-label>
+    <input matInput formControlName="questTitle" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <textarea
+      matInput
+      cdkTextareaAutosize
+      formControlName="description"
+    ></textarea>
+  </mat-form-field>
+</form>
