@@ -1,10 +1,19 @@
+@font-face {
+  font-family: "Myriad";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad"),
+    url("../../assets/fonts/MyriadPro-Regular.woff") format("woff");
+}
+
 main {
   position: relative;
   width: 882px + 61px;
   height: 885px;
   background: url("../../assets/images/Backdrop.png") 14px 109px no-repeat;
   padding-top: 78px;
-  font-family: sans-serif;
+  font-family: "Axis", sans-serif;
+  font-weight: normal;
 }
 
 header {
@@ -91,9 +100,9 @@ section {
     font-size: 24px;
     margin: 12px 0 0 -12px;
     color: white;
-    text-shadow: -1px -1px 0 rgba(75, 75, 75, 0.7),
-      1px -1px 0 rgba(75, 75, 75, 0.7), -1px 1px 0 rgba(75, 75, 75, 0.7),
-      1px 1px 0 rgba(75, 75, 75, 0.7);
+    text-shadow: -1.5px -1.5px 0 rgba(75, 75, 75, 0.7),
+      1.5px -1.5px 0 rgba(75, 75, 75, 0.7), -1.5px 1.5px 0 rgba(75, 75, 75, 0.7),
+      1.5px 1.5px 0 rgba(75, 75, 75, 0.7);
   }
 
   p {
