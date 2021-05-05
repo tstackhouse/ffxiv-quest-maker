@@ -1,1 +1,35 @@
-<app-quest></app-quest>
+<mat-drawer-container fxFlexFill class="container">
+  <mat-drawer mode="side" opened class="sidebar mat-typography">
+    <h1>Eorzea's Folly</h1>
+    <form [formGroup]="form" fxLayout="column">
+      <mat-form-field>
+        <mat-label>Quest Type</mat-label>
+        <mat-select formControlName="type">
+          <mat-option value="quest-start">Normal</mat-option>
+          <mat-option value="msq-start">MSQ</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Quest Title</mat-label>
+        <input matInput formControlName="questTitle" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Description</mat-label>
+        <textarea
+          matInput
+          cdkTextareaAutosize
+          formControlName="description"
+        ></textarea>
+      </mat-form-field>
+    </form>
+  </mat-drawer>
+  <mat-drawer-content class="main-content">
+    <div fxLayout>
+      <app-quest
+        [type]="form.value.type"
+        [questTitle]="form.value.questTitle"
+        [description]="form.value.description"
+      ></app-quest>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

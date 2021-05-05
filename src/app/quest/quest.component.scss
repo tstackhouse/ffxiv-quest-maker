@@ -6,8 +6,14 @@
     url("../../assets/fonts/MyriadPro-Regular.woff") format("woff");
 }
 
-main {
+:host {
+  display: block;
+  scale: 0.75;
   position: relative;
+}
+
+main {
+  position: absolute;
   width: 882px + 61px;
   height: 885px;
   background: url("../../assets/images/Backdrop.png") 14px 109px no-repeat;
