@@ -1,10 +1,23 @@
-<mat-drawer-container fxFlexFill class="container" fxShow fxHide.lt-md="true">
+<mat-drawer-container class="container" fxFlexFill fxShow fxHide.lt-md="true">
   <mat-drawer mode="side" opened class="mat-typography">
-    <mat-toolbar color="primary">
-      <h1>Eorzea's Folly</h1>
-    </mat-toolbar>
-    <div class="sidebar">
-      <ng-container [ngTemplateOutlet]="form"></ng-container>
+    <div fxLayout="column" fxFlexFill>
+      <mat-toolbar color="primary">
+        <h1>Eorzea's Folly</h1>
+      </mat-toolbar>
+      <div class="sidebar" fxFlex="1 0 auto">
+        <ng-container [ngTemplateOutlet]="form"></ng-container>
+      </div>
+      <footer fxLayout="row" fxLayoutAlign="end">
+        <a mat-button href="https://old.reddit.com/r/ffxiv" target="_blank"
+          >FFXIV Subreddit</a
+        >
+        <a
+          mat-button
+          href="https://github.com/tstackhouse/ffxiv-quest-maker"
+          target="_blank"
+          >GitHub</a
+        >
+      </footer>
     </div>
   </mat-drawer>
   <mat-drawer-content class="main-content">
