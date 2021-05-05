@@ -43,8 +43,7 @@ main {
   transform-origin: top left;
   width: 909px;
   height: 885px;
-  background: url("../../assets/images/Backdrop.png") 14px 109px no-repeat;
-  padding-top: 78px;
+  background: url("../../assets/images/Backdrop.png") 14px 31px no-repeat;
   font-family: "Axis Sight", sans-serif;
   font-weight: normal;
 }
@@ -54,6 +53,7 @@ header {
   height: 382px;
   background: url("../../assets/images/TopFrame.png") 0px 0px no-repeat;
   padding-top: 106px;
+  margin-top: 78px;
 
   h1 {
     text-align: center;
@@ -65,7 +65,7 @@ header {
       background: url("../../assets/images/QuestStart.png") 0px 0px no-repeat;
       display: block;
       left: 409px;
-      top: 53px;
+      top: -25px;
       position: absolute;
       width: 89px;
       height: 116px;
@@ -76,7 +76,7 @@ header {
     &::before {
       background-image: url("../../assets/images/MSQStart.png");
       left: 402px;
-      top: 28px;
+      top: -50px;
       width: 110px;
       height: 117px;
     }
@@ -87,7 +87,7 @@ header {
     background: url("../../assets/images/LeftFrame.png") 0px 0px no-repeat;
     display: block;
     left: 0;
-    top: 460px;
+    top: 382px;
     position: absolute;
     width: 44px;
     height: 328px;
@@ -95,12 +95,10 @@ header {
 }
 
 section {
-  left: 64px;
-  top: 270px;
-  position: absolute;
+  position: relative;
   width: 780px;
-  height: 545px;
-  padding-top: 20px;
+  height: 565px;
+  margin: -296px 64px 0;
 
   &::before,
   &::after {
@@ -108,14 +106,12 @@ section {
     background: url("../../assets/images/Seperator.png") 0px 0px no-repeat;
     width: 780px;
     height: 8px;
-    position: absolute;
+    margin-bottom: 12px;
+    display: block;
   }
 
-  &::before {
-    top: 0;
-  }
   &::after {
-    bottom: 0;
+    margin-bottom: 0;
   }
 
   figure {
@@ -123,6 +119,9 @@ section {
     height: 220px;
     background-color: burlywood;
     margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    box-sizing: border-box;
   }
 
   h2 {
@@ -140,7 +139,7 @@ section {
 
   p {
     width: 720px;
-    height: 220px;
+    height: 265px;
     margin: 0 auto;
     font-size: 30px;
   }
