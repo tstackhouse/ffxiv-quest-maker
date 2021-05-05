@@ -1,7 +1,11 @@
 <mat-drawer-container fxFlexFill class="container" fxShow fxHide.lt-md="true">
-  <mat-drawer mode="side" opened class="sidebar mat-typography">
-    <h1>Eorzea's Folly</h1>
-    <ng-container [ngTemplateOutlet]="form"></ng-container>
+  <mat-drawer mode="side" opened class="mat-typography">
+    <mat-toolbar color="primary">
+      <h1>Eorzea's Folly</h1>
+    </mat-toolbar>
+    <div class="sidebar">
+      <ng-container [ngTemplateOutlet]="form"></ng-container>
+    </div>
   </mat-drawer>
   <mat-drawer-content class="main-content">
     <div fxLayout>
@@ -11,6 +15,11 @@
 </mat-drawer-container>
 
 <div fxHide fxShow.lt-md="true">
+  <div class="mat-typography">
+    <mat-toolbar color="primary">
+      <h1>Eorzea's Folly</h1>
+    </mat-toolbar>
+  </div>
   <ng-container [ngTemplateOutlet]="questBox"></ng-container>
   <button
     mat-fab
