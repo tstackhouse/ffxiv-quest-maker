@@ -1,11 +1,44 @@
-<mat-drawer-container fxFlexFill class="container">
+<mat-drawer-container fxFlexFill class="container" fxShow fxHide.lt-md="true">
   <mat-drawer mode="side" opened class="sidebar mat-typography">
     <h1>Eorzea's Folly</h1>
-    <app-config-form [(questData)]="questData"></app-config-form>
+    <ng-container [ngTemplateOutlet]="form"></ng-container>
   </mat-drawer>
   <mat-drawer-content class="main-content">
     <div fxLayout>
-      <app-quest [config]="questData"></app-quest>
+      <ng-container [ngTemplateOutlet]="questBox"></ng-container>
     </div>
   </mat-drawer-content>
 </mat-drawer-container>
+
+<div fxHide fxShow.lt-md="true">
+  <ng-container [ngTemplateOutlet]="questBox"></ng-container>
+  <button
+    mat-fab
+    color="primary"
+    aria-label="Edit"
+    class="edit-button"
+    (click)="openEditSheet(form)"
+  >
+    <mat-icon>edit</mat-icon>
+  </button>
+</div>
+
+<ng-template #form>
+  <div fxLayout="column">
+    <app-config-form [(questData)]="questData"></app-config-form>
+    <button
+      fxHide
+      fxShow.lt-md="true"
+      fxFlexAlign="end"
+      mat-raised-button
+      color="primary"
+      (click)="closeSheet()"
+    >
+      Done
+    </button>
+  </div>
+</ng-template>
+
+<ng-template #questBox>
+  <app-quest [config]="questData"></app-quest>
+</ng-template>

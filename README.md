@@ -8,7 +8,7 @@ Inspired by (and using some of the assets from) [this Reddit post](https://www.r
 
 ## To Do
 
-- [ ] Looks pretty awful on mobile, the layout needs love
+- [x] Looks pretty awful on mobile, the layout needs love
 - [ ] Don't use absolute positioning to build up the box
 - [ ] Scaling the box to the available viewport if it's too big
 - [ ] Come up with an acutal palatte of css colors
