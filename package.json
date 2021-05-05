@@ -8,7 +8,7 @@
   "repository": "https://github.com/tstackhouse/ffxiv-quest-maker",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 4202",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
