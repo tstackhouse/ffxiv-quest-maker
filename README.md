@@ -5,6 +5,8 @@ Inspired by (and using some of the assets from) [this Reddit post](https://www.r
 ## To Do
 
 - [ ] Looks pretty awful on mobile, the layout needs love
+- [ ] Don't use absolute positioning to build up the box
+- [ ] Scaling the box to the available viewport if it's too big
 - [ ] Come up with an acutal palatte of css colors
 - [x] Fonts aren't quite right
 - [ ] Use the icon font for the section headers
@@ -19,6 +21,7 @@ Inspired by (and using some of the assets from) [this Reddit post](https://www.r
 - [ ] Quest Locked overlay
 - [ ] Rewards tray
 - [ ] Make the image banner optional
+- [ ] Built in image export? - Seems possible with HTML2Canvas or WebRTC
 
 ## Credits/Copyright/License
 

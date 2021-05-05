@@ -10,9 +10,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { QuestComponent } from './quest/quest.component';
+import { ConfigFormComponent } from './config-form/config-form.component';
 
 @NgModule({
-  declarations: [AppComponent, QuestComponent],
+  declarations: [AppComponent, QuestComponent, ConfigFormComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
