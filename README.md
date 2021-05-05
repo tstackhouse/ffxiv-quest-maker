@@ -1,6 +1,30 @@
-# FfxivQuestMaker
+# Eorzea's Folly: FFXIV Quest Maker
 
 Inspired by (and using some of the assets from) [this Reddit post](https://www.reddit.com/r/ffxiv/comments/n4mcd7/i_created_a_custom_quest_template_thought_you_all/)
+
+## To Do
+
+- [ ] Looks pretty awful on mobile, the layout needs love
+- [ ] Fonts aren't quite right
+- [ ] Image banner with a couple options
+- [ ] Arbitrary height for shrinking/growing the box
+- [ ] Quest Level Bubble
+- [ ] Other Quest Type Icons - Need the images
+- [ ] Start/Complete types (part of the above?)
+- [ ] Repeatable icon
+- [ ] Make Accept/Reject disableable
+- [ ] Make Button text editable
+- [ ] Quest Locked overlay
+- [ ] Rewards tray
+- [ ] Make the image banner optional
+
+## Credits/Copyright/License
+
+This is a just for fun little thing inspired by [u/ceeteesalv](https://www.reddit.com/user/ceeteesalv) on the [FFXIV Subreddit](https://www.reddit.com/r/ffxiv/). I do not own nor claim to own the copyright of any image or font assets used in this project, which belong to their respective owners, including Square Enix. All code in this project is available under the [GPLv3 (or later)](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+This is a fan work for fun, just don't be a dick ;)
+
+## Angular CLI Boilerplate
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
 
