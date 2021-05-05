@@ -5,9 +5,7 @@
   <section>
     <figure>IMAGE HERE</figure>
     <h2>Description</h2>
-    <p>
-      {{ config.description }}
-    </p>
+    <p [innerHTML]="config.description"></p>
   </section>
   <footer>
     <button>Accept</button>

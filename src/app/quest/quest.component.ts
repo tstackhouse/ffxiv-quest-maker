@@ -17,7 +17,7 @@ import { map } from 'rxjs/operators';
 export const DEFAULT_CONFIG: QuestConfig = {
   type: 'quest-start',
   questTitle: "I Feel Like I've Been Here Before",
-  description: 'Alphinaud is at it again...',
+  description: 'Alphinaud is at it again...\n\nOh bother.',
   // description: "Garnet ultima ultima weapon onion knight maiden's kiss osmose dragon wrist Fenir blue mage. Biggs ultima ultima weapon dragon's hair sleeping bag bio survial vest Diabolos summoner. Lenna waterga magic pot missing score map curaga rubber suit Ifrit ranger."
 };
 export interface QuestConfig {
@@ -62,9 +62,14 @@ export class QuestComponent implements OnInit, OnChanges {
   ngOnInit(): void {}
 
   ngOnChanges(): void {
-    this.config = {
+    const config = {
       ...DEFAULT_CONFIG,
       ...this.config,
+    };
+
+    this.config = {
+      ...config,
+      description: config.description.replace(/(?:\r\n|\r|\n)/g, '<br>'),
     };
   }
 }
