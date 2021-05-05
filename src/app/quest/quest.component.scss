@@ -121,10 +121,17 @@ section {
     border-radius: 12px;
     position: relative;
 
+    img {
+      position: absolute;
+      width: 100%;
+      top: -100%;
+      left: 0;
+      right: 0;
+      bottom: -100%;
+      margin: auto;
+    }
+
     .image {
-      background-color: burlywood;
-      text-align: center;
-      padding-top: 100px;
       width: 720px;
       height: 220px;
       box-sizing: border-box;
@@ -134,15 +141,13 @@ section {
       width: 720px;
       height: 220px;
       position: absolute;
-      background-color: burlywood;
-      text-align: center;
-      padding-top: 100px;
       width: 720px;
       height: 220px;
       box-sizing: border-box;
       top: 0;
       left: 0;
       filter: blur(6px);
+      overflow: hidden;
     }
   }
 
