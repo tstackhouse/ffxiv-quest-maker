@@ -1,9 +1,35 @@
 @font-face {
   font-family: "Myriad";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Myriad"),
-    url("../../assets/fonts/MyriadPro-Regular.woff") format("woff");
+  src: url("../../assets/fonts/MyriadPro-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Davis Sans Bold";
+  src: url("../../assets/fonts/DS_B.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "XIV Icons";
+  src: url("../../assets/fonts/FFXIVAppIcons.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Axis Emoji";
+  src: url("../../assets/fonts/XIV_ASAS_EMOJI.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Axis Sight";
+  src: url("../../assets/fonts/XIV_ASAS_R.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Meidinger Medium";
+  src: url("../../assets/fonts/XIV_MM_R.otf") format("opentype");
+}
+@font-face {
+  font-family: "Trump Gothic East Medium";
+  src: url("../../assets/fonts/XIV_TGEM_R.otf") format("opentype");
 }
 
 :host {
@@ -18,7 +44,7 @@ main {
   height: 885px;
   background: url("../../assets/images/Backdrop.png") 14px 109px no-repeat;
   padding-top: 78px;
-  font-family: "Axis", sans-serif;
+  font-family: "Axis Sight", sans-serif;
   font-weight: normal;
 }
 

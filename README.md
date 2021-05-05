@@ -5,7 +5,9 @@ Inspired by (and using some of the assets from) [this Reddit post](https://www.r
 ## To Do
 
 - [ ] Looks pretty awful on mobile, the layout needs love
-- [ ] Fonts aren't quite right
+- [ ] Come up with an acutal palatte of css colors
+- [x] Fonts aren't quite right
+- [ ] Use the icon font for the section headers
 - [ ] Image banner with a couple options
 - [ ] Arbitrary height for shrinking/growing the box
 - [ ] Quest Level Bubble
