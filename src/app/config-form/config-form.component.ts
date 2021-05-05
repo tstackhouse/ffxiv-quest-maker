@@ -28,6 +28,7 @@ export class ConfigFormComponent implements OnInit, OnDestroy {
       type: this.questData.type,
       questTitle: this.questData.questTitle,
       description: this.questData.description,
+      image: this.questData.image,
     });
 
     this.subscription = this.form.valueChanges.subscribe((val) => {

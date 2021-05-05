@@ -18,12 +18,15 @@ export const DEFAULT_CONFIG: QuestConfig = {
   type: 'quest-start',
   questTitle: "I Feel Like I've Been Here Before",
   description: 'Alphinaud is at it again...\n\nOh bother.',
+  image:
+    'https://cdn.vox-cdn.com/thumbor/rXcqrvMeI48yMdhyY55b2IdYehY=/0x0:600x338/1200x800/filters:focal(252x121:348x217)/cdn.vox-cdn.com/uploads/chorus_image/image/68779637/FFXIV_PUB_Announcement_Showcase_05.0.png',
   // description: "Garnet ultima ultima weapon onion knight maiden's kiss osmose dragon wrist Fenir blue mage. Biggs ultima ultima weapon dragon's hair sleeping bag bio survial vest Diabolos summoner. Lenna waterga magic pot missing score map curaga rubber suit Ifrit ranger."
 };
 export interface QuestConfig {
   readonly type: 'quest-start' | 'msq-start';
   readonly questTitle: string;
   readonly description: string;
+  readonly image: string;
 }
 @Component({
   selector: 'app-quest',

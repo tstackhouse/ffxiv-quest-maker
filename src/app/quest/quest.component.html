@@ -5,7 +5,7 @@
   <section>
     <figure>
       <ng-template #image>
-        <img src="../../assets/images/wol.jpeg" />
+        <img src="{{ config.image }}" />
       </ng-template>
       <div class="blur">
         <ng-container [ngTemplateOutlet]="image"></ng-container>
