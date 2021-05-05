@@ -117,11 +117,33 @@ section {
   figure {
     width: 720px;
     height: 220px;
-    background-color: burlywood;
     margin: 0 auto;
-    text-align: center;
-    padding-top: 100px;
-    box-sizing: border-box;
+    border-radius: 12px;
+    position: relative;
+
+    .image {
+      background-color: burlywood;
+      text-align: center;
+      padding-top: 100px;
+      width: 720px;
+      height: 220px;
+      box-sizing: border-box;
+      clip-path: inset(12px);
+    }
+    .blur {
+      width: 720px;
+      height: 220px;
+      position: absolute;
+      background-color: burlywood;
+      text-align: center;
+      padding-top: 100px;
+      width: 720px;
+      height: 220px;
+      box-sizing: border-box;
+      top: 0;
+      left: 0;
+      filter: blur(6px);
+    }
   }
 
   h2 {

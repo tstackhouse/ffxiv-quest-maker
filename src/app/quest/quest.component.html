@@ -3,7 +3,17 @@
     <h1 [class]="config.type">{{ config.questTitle }}</h1>
   </header>
   <section>
-    <figure>IMAGE HERE</figure>
+    <figure>
+      <ng-template #image>
+        <div class="source">IMAGE HERE</div>
+      </ng-template>
+      <div class="blur">
+        <ng-container [ngTemplateOutlet]="image"></ng-container>
+      </div>
+      <div class="image">
+        <ng-container [ngTemplateOutlet]="image"></ng-container>
+      </div>
+    </figure>
     <h2>Description</h2>
     <p [innerHTML]="config.description"></p>
   </section>
