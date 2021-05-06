@@ -53,7 +53,7 @@ header {
   height: 382px;
   background: url("../../assets/images/TopFrame.png") 0px 0px no-repeat;
   padding-top: 106px;
-  margin-top: 78px;
+  margin-top: 60px;
 
   h1 {
     text-align: center;
@@ -131,23 +131,36 @@ section {
       margin: auto;
     }
 
-    .image {
+    .image,
+    .blur,
+    .blur2 {
       width: 720px;
       height: 220px;
-      box-sizing: border-box;
-      clip-path: inset(12px);
+    }
+
+    // to do the blur, clip a frame and then separatebly blur, otherwise the clip interferes with the blur
+    .image {
+      clip-path: inset(10px);
     }
     .blur {
-      width: 720px;
-      height: 220px;
+      filter: blur(5px);
       position: absolute;
-      width: 720px;
-      height: 220px;
-      box-sizing: border-box;
       top: 0;
       left: 0;
-      filter: blur(6px);
-      overflow: hidden;
+    }
+    .blur2 {
+      clip-path: polygon(
+        0 0,
+        0 100%,
+        20px 100%,
+        20px 20px,
+        calc(100% - 20px) 20px,
+        calc(100% - 20px) calc(100% - 20px),
+        20px calc(100% - 20px),
+        20px 100%,
+        100% 100%,
+        100% 0
+      );
     }
   }
 

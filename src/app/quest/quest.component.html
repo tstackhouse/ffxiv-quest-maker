@@ -7,11 +7,13 @@
       <ng-template #image>
         <img src="{{ config.image }}" />
       </ng-template>
-      <div class="blur">
-        <ng-container [ngTemplateOutlet]="image"></ng-container>
-      </div>
       <div class="image">
         <ng-container [ngTemplateOutlet]="image"></ng-container>
+      </div>
+      <div class="blur">
+        <div class="blur2">
+          <ng-container [ngTemplateOutlet]="image"></ng-container>
+        </div>
       </div>
     </figure>
     <h2>Description</h2>

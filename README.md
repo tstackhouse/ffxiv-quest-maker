@@ -14,6 +14,7 @@ Inspired by (and using some of the assets from) [this Reddit post](https://www.r
 - [ ] Come up with an acutal palatte of css colors
 - [x] Fonts aren't quite right
 - [ ] Use the icon font for the section headers
+- [x] Use any url for the image
 - [ ] Image banner with a couple options
 - [ ] Arbitrary height for shrinking/growing the box
 - [ ] Quest Level Bubble
